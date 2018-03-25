@@ -2,23 +2,29 @@ package com.higgin.weather.client;
 
 import com.higgin.weather.WeatherInterface;
 import com.higgin.weather.WeatherModel;
-import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-public class WeatherClient {
 
-    public static void main(String[] args) {
-        //jaxWsProxyFactoryBean调用WebService服务端
-        JaxWsProxyFactoryBean jaxWsProxyFactoryBean=new JaxWsProxyFactoryBean();
-        //调用地址
-        jaxWsProxyFactoryBean.setAddress("http://127.0.0.1:12345/weather?wsdl");
-        //设置portType
-        jaxWsProxyFactoryBean.setServiceClass(WeatherInterface.class);
-        //创建portType
-        WeatherInterface weatherInterface=(WeatherInterface) jaxWsProxyFactoryBean.create();
+public class ClientTest {
+
+    private ApplicationContext applicationContext;
+
+    @Before
+    public void before() {
+        applicationContext = new ClassPathXmlApplicationContext("classpath:context/applicationContext.xml");
+    }
+
+    @Test
+    public void textCxfSpringClient() {
+        //从spring容器中取出portType
+        WeatherInterface weatherInterface = (WeatherInterface)applicationContext.getBean("weatherClient");
 
         //调用portType方法
         List<WeatherModel> list=weatherInterface.queryWeather("杭州");

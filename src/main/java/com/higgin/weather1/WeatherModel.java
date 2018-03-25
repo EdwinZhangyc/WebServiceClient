@@ -1,5 +1,5 @@
 
-package com.higgin.weather;
+package com.higgin.weather1;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -10,23 +10,23 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>weatherModel complex type的 Java 类。
+ * <p>weatherModel complex type锟斤拷 Java 锟洁。
  * 
- * <p>以下模式片段指定包含在此类中的预期内容。
+ * <p>锟斤拷锟斤拷模式片锟斤拷指锟斤拷锟斤拷锟斤拷锟节达拷锟斤拷锟叫碉拷预锟斤拷锟斤拷锟捷★拷
  * 
  * <pre>
- * &lt;complexType name="weatherModel"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
- *         &lt;element name="detail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="temperature_max" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="temperature_min" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
+ * &lt;complexType name="weatherModel">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *         &lt;element name="detail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="temperature_max" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="temperature_min" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
  * </pre>
  * 
  * 
@@ -49,7 +49,7 @@ public class WeatherModel {
     protected int temperatureMin;
 
     /**
-     * 获取date属性的值。
+     * 锟斤拷取date锟斤拷锟皆碉拷值锟斤拷
      * 
      * @return
      *     possible object is
@@ -61,7 +61,7 @@ public class WeatherModel {
     }
 
     /**
-     * 设置date属性的值。
+     * 锟斤拷锟斤拷date锟斤拷锟皆碉拷值锟斤拷
      * 
      * @param value
      *     allowed object is
@@ -73,7 +73,7 @@ public class WeatherModel {
     }
 
     /**
-     * 获取detail属性的值。
+     * 锟斤拷取detail锟斤拷锟皆碉拷值锟斤拷
      * 
      * @return
      *     possible object is
@@ -85,7 +85,7 @@ public class WeatherModel {
     }
 
     /**
-     * 设置detail属性的值。
+     * 锟斤拷锟斤拷detail锟斤拷锟皆碉拷值锟斤拷
      * 
      * @param value
      *     allowed object is
@@ -97,7 +97,7 @@ public class WeatherModel {
     }
 
     /**
-     * 获取temperatureMax属性的值。
+     * 锟斤拷取temperatureMax锟斤拷锟皆碉拷值锟斤拷
      * 
      */
     public int getTemperatureMax() {
@@ -105,7 +105,7 @@ public class WeatherModel {
     }
 
     /**
-     * 设置temperatureMax属性的值。
+     * 锟斤拷锟斤拷temperatureMax锟斤拷锟皆碉拷值锟斤拷
      * 
      */
     public void setTemperatureMax(int value) {
@@ -113,7 +113,7 @@ public class WeatherModel {
     }
 
     /**
-     * 获取temperatureMin属性的值。
+     * 锟斤拷取temperatureMin锟斤拷锟皆碉拷值锟斤拷
      * 
      */
     public int getTemperatureMin() {
@@ -121,7 +121,7 @@ public class WeatherModel {
     }
 
     /**
-     * 设置temperatureMin属性的值。
+     * 锟斤拷锟斤拷temperatureMin锟斤拷锟皆碉拷值锟斤拷
      * 
      */
     public void setTemperatureMin(int value) {
